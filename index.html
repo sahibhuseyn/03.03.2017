@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03.03.2017</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/custom.css">
+	<link rel="icon" type="img/png" href="images/s.png">
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+
+<!-- 	accordion menu-->
+
+ <div id="header">
+		<div class="wrapper">
+				<div class="row">
+				<button class="menu col12">Accordion <i class="fa fa-angle-down"></i></button>
+					<div class="item col4"><a href="#header"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+					Go to the related section </a></div>
+				<button class="menu col12">Holiday<i class="fa fa-angle-down"></i></button>
+					<div class="item col4"><a href="#holiday"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+					Go to the related section </a></div>
+				<button class="menu col12">Alumni<i class="fa fa-angle-down"></i></button>
+					<div class="item col4"><a href="#alumni"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+					Go to the related section </a></div>
+				<button class="menu col12">Shapes<i class="fa fa-angle-down"></i></button>
+					<div class="item col4"><a href="#shapes"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+					Go to the related section </a></div>
+				<button class="menu col12">Traffic Lights<i class="fa fa-angle-down"></i></button>
+					<div class="item col4"><a href="#traffic-light"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+					Go to the related section </a></div>
+				<button class="menu col12">Music Player<i class="fa fa-angle-down"></i></button>
+					<div class="item col4"><a href="#musicPlayer"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+					Go to the related section </a></div>
+				<button class="menu col12">Slider<i class="fa fa-angle-down"></i></button>
+					<div class="item col4"><a href="#slider"><i class="fa fa-arrow-right" aria-hidden="true"></i> 
+					Go to the related section </a></div>
+				<button class="menu col12">Text Editor<i class="fa fa-angle-down"></i></button>
+					<div class="item col4"><a href="#text"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+					Go to the related section </a></div>
+				<button class="menu col12">Photo Effect<i class="fa fa-angle-down"></i></button>
+					<div class="item col4"><a href="#photoEffect"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+					Go to the related section </a></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			menu();
+		</script>	
+	</div>
+
+<!-- holiday counter -->
+
+	<div id="holiday">
+		<div class="wrapper">
+			<div class="row">
+				<h1>Novruz countdown</h1>
+			</div>
+			<div class="row">
+				<div class="time">
+					  <div>
+					    <span class="days"></span>
+					    <div class="title">Days</div>
+					  </div>
+					  <div>
+					    <span class="hours"></span>
+					    <div class="title">Hours</div>
+					  </div>
+					  <div>
+					    <span class="minutes"></span>
+					    <div class="title">Minutes</div>
+					  </div>
+					  <div>
+					    <span class="seconds"></span>
+					    <div class="title">Seconds</div>
+					  </div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			date();
+		</script>
+	</div>
+
+<!-- alumni section
+ -->
+	<div id="alumni">
+		<div class="wrapper">
+			<div class="row">
+				<h1>Alumni countdown</h1>
+			</div>
+			<div class="row">
+				<div class="time">
+					  <div>
+					    <p id="alminutes"></p>
+					  </div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				alumniCount()
+			</script>
+		</div>
+	</div>
+	<div id="shapes">
+		<div class="wrapper">
+			<div class="shapes">
+				<div class="triangle"></div>
+				<button id="tapHere">Triangle</button>
+				<div class="rectangle"></div>
+				<div class="circle"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Traffic light-->
+
+	<div id="traffic-light" onload="changeLights()">
+		<div class="wrapper">
+			<div class="tube"></div>
+			<div class="traffic">
+				<div class="bulb"></div>
+				<div class="bulb"></div>
+				<div class="bulb"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--music player-->
+
+	<div id="musicPlayer">
+		<audio src=""></audio>
+	</div>
+
+
+	<!--slider-->
+
+	<div id="slider">
+		<div class="wrapper">
+			<h1>Slider section</h1>
+			<div class="w3-content w3-display-container" style="max-width:800px">
+				<img class="images" src="images/01.jpg">
+				<img class="images" src="images/02.jpg">
+				<img class="images" src="images/03.jpg">
+				<img class="images" src="images/04.jpg">
+				<div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+	    		<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="leftRight(-1)">&#10094;</div>
+	    		<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="leftRight(1)">&#10095;</div>
+	   			 <span class="w3-badge dot w3-border w3-transparent w3-hover-white" onclick="next(1)"></span>
+	   			 <span class="w3-badge dot w3-border w3-transparent w3-hover-white" onclick="next(2)"></span>
+	    		<span class="w3-badge dot w3-border w3-transparent w3-hover-white" onclick="next(2)"></span>
+	    		<span class="w3-badge dot w3-border w3-transparent w3-hover-white" onclick="next(3)"></span>
+		  		</div>
+		  		<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function leftRight(n) {
+					  showDivs(slideIndex += n);
+					}
+
+					function next(n) {
+					  showDivs(slideIndex = n);
+					}
+
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("images");
+					  var dots = document.getElementsByClassName("dot");
+					  if (n > x.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+					     x[i].style.display = "none";  
+					  }
+					  for (i = 0; i < dots.length; i++) {
+					     dots[i].className = dots[i].className.replace(" w3-white", "");
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					  dots[slideIndex-1].className += " w3-white";
+					}
+				</script>
+	  		</div>
+	  	</div>
+	</div>
+
+
+	<!--text editor-->
+
+	<div id="text" style="padding: 10px;">
+		<div class="wrapper">
+			<p id="myP" style="margin: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores totam tempora. Quasi deserunt commodi ducimus vero explicabo. Totam eum quae, ab laborum natus. Deserunt adipisci facilis nesciunt vel ipsa.</p>
+			<button onclick="bold()">Bold</button>
+			<button onclick="italic()">Italic</button>
+			<textarea placeholder="input color example = blue" id="mcolor"></textarea>
+			<button onclick="color()">Change</button>
+			<script type="text/javascript">
+				
+				function bold(){
+					document.getElementById('myP').style.fontWeight = "bold";
+				}
+				function italic(){
+					document.getElementById('myP').style.fontStyle = "italic";
+				}
+				function color(){
+				var z= document.getElementById("mcolor").value;
+    			document.getElementById('myP').style.color = z;
+				}
+				
+			</script>
+		</div>
+	</div>
+
+	<!--photo effect-->
+
+	<div id="photoEffect">
+		<div class="wrapper">
+			<img src="images/06.jpg" alt="" class="row effect">
+			<button onclick="blur()">Blur</button>
+			<button onclick="brightness()">Brightness</button>
+			<button onclick="contrast()">Contrast</button>
+			<button onclick="grayscal()">Grayscale</button>
+			<button onclick="huerotate()">Huerotate</button>
+			<button onclick="sepia()">Sepia</button>
+			<button onclick="saturate()">Saturate</button>
+			<button onclick="invert()">Invert</button>
+		</div>
+		<script type="text/javascript">
+			var p = document.getElementsByClassName('effect')[0];
+			function blur(){
+			p.setAttribute("style", 'filter: blur(100px)')
+			}
+			function brightness(){
+			p.setAttribute("style", 'filter: brightness(200%)')
+			}
+			function contrast(){
+				p.setAttribute("style", 'filter: contrast(100%)')
+			}
+			function grayscal(){
+				p.setAttribute("style", 'filter: grayscal(100%)')
+			}
+			function huerotate(){
+				p.setAttribute("style", 'filter: hue-rotate(90deg)')
+			}
+			function sepia(){
+				p.setAttribute("style", 'filter: sepia(100%)')
+			}
+			function saturate(){
+				p.setAttribute("style", 'filter: saturate(800%)')
+			}
+			function invert(){
+				p.setAttribute("style", 'filter: invert(50%))')
+			}
+			
+		</script>
+		
+	</div>
+	
+</body>
+</html>
